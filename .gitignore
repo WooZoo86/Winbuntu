@@ -1,3 +1,8 @@
 # Editor Files
 .vs/
 .vscode/
+
+
+# ISO and VM Files
+*.iso
+*.vdi

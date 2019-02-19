@@ -5,6 +5,9 @@ $start_time = Get-Date
 $prog_loc = (Resolve-Path .\).Path
 $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
 
+# A simple method to allow us to reboot the computer in the middle of the script
+workflow Persistent_Reboot { Restart-Computer -Wait }
+
 # Enables WSL as a feature
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Persistent_Reboot
@@ -21,6 +24,3 @@ Expand-Archive ~/Ubuntu.zip ~/Ubuntu
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 Write-Host "Restarting computer to save changes"
 Restart-Computer    
-
-# A simple method to allow us to reboot the computer in the middle of the script
-workflow Persistent_Reboot { Restart-Computer -Wait }

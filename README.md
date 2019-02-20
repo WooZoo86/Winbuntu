@@ -1,10 +1,4 @@
 <!-- PROJECT HEADER -->
-<br />
-<p align="center">
-  <a href="https://github.com/LvInSaNevL/Winbuntu/blob/master/Logos/Winbuntu.png">
-    <img src="logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h1 align="center">Winbuntu</h1>
 
   <p align="center">
@@ -23,11 +17,9 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 
@@ -53,8 +45,7 @@ Currently the only prerequisite is that you have installed Windows 10 Personal o
 1. Download this repository 
 2. Open a Powershell terminal as admin. The script is not able to run without admin rights.
 3. Navigate to the directory location
-4. Run ```powershell
-.\installer.ps1```
+4. Run `.\installer.ps1`
 <br>
 Note regarding installation; Your computer *will* reboot multiple times during installation, this is normall and to be expected. 
 

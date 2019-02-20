@@ -4,9 +4,9 @@
   <p align="center">
     A tool for everyone who wants a Linux-like experience on a Windows 10 kernel!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/LvInSaNevL/Winbuntu/issues/new">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/LvInSaNevL/Winbuntu/issues/new">Request Feature</a>
   </p>
 </p>
 

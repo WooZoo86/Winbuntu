@@ -1,4 +1,6 @@
 <!-- PROJECT HEADER -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LvInSaNevL/Winbuntu/master/Logos/Winbuntu.png" alt="Logo" width="100" height="100">
   <h1 align="center">Winbuntu</h1>
 
   <p align="center">
@@ -83,6 +85,6 @@ Distributed under the GNU General Public License V3 License. See `LICENSE` for m
 ## Contact
 Community Link: [https://discord.gg/7uzCM92](https://discord.gg/7uzCM92)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link:   [https://github.com/LvInSaNevL/Winbuntu](https://github.com/LvInSaNevL/Winbuntu)
 
 

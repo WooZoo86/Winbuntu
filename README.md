@@ -39,7 +39,7 @@ Winbuntu aims to completely and totally close that gap by, in short, running a U
 The following instructions will let you get Winbuntu up and running locally
 
 ### Prerequisites
-Currently the only prerequisite is that you have installed Windows 10 Personal or Professional April 2018 update or newer. There is no reason why this shouldn't work on older versions or the most recent update to LTSB, but it has not been tested or verified. 
+Currently the only prerequisite is that you have installed Windows 10 Personal or Professional Build 17763 or newer; if you are unsure which version of windows you have, open a powershell terminal and enter `[System.Environment]::OSVersion.Version`. There is no reason why this shouldn't work on older versions or the most recent update to LTSB, but it has not been tested or verified. 
 
 ### Installation
 1. Download this repository 

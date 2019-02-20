@@ -41,15 +41,14 @@ Winbuntu aims to completely and totally close that gap by, in short, running a U
 The following instructions will let you get Winbuntu up and running locally
 
 ### Prerequisites
-Currently the only prerequisite is that you have installed Windows 10 Personal or Professional Build 17763 or newer; if you are unsure which version of windows you have, open a powershell terminal and enter `[System.Environment]::OSVersion.Version`. There is no reason why this shouldn't work on older versions or the most recent update to LTSB, but it has not been tested or verified. 
+1. Currently the only prerequisite is that you have installed Windows 10 Personal or Professional Build 17763 or newer; if you are unsure which version of windows you have, open a powershell terminal and enter `[System.Environment]::OSVersion.Version`. There is no reason why this shouldn't work on older versions or the most recent update to LTSB, but it has not been tested or verified. 
+2. Windows Subsystem for Linux needs to be enabled. If you would like to do it through powershell you can enter the command `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` and restart your computer when prompted. 
 
 ### Installation
 1. Download this repository 
 2. Open a Powershell terminal as admin. The script is not able to run without admin rights.
 3. Navigate to the directory location
 4. Run `.\installer.ps1`
-<br>
-Note regarding installation; Your computer *will* reboot multiple times during installation, this is normall and to be expected. 
 
 
 

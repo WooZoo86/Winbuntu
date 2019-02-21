@@ -21,7 +21,8 @@ Expand-Archive ~/Ubuntu.zip ~/Ubuntu
 
 # Adds the ubuntu application to your path
 Write-Host "Adding Ubuntu to path"
-InlineScript { [System.Environment]::SetEnvironmentVariable("PATH", $userenv + "C:\Users\Administrator\Ubuntu", "User") }
+$addPath = [System.Environment]::SetEnvironmentVariable("PATH", $userenv + "C:\Users\Administrator\Ubuntu", "User")
+Invoke-Expression -Command $addPath
 
 # Finally, restarts the computer so changes take effect
 Write-Host "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"

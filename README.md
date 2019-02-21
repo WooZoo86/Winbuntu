@@ -46,6 +46,7 @@ The following instructions will let you get Winbuntu up and running locally
 
 ### Installation
 1. Download this repository 
+2. Copy the folder contents to the location you want Winbuntu to install (e.g `C:\ProgramFiles\Winbuntu`)
 2. Open a Powershell terminal as admin. The script is not able to run without admin rights.
 3. Navigate to the directory location
 4. Run `.\installer.ps1`

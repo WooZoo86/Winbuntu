@@ -46,9 +46,9 @@ The following instructions will let you get Winbuntu up and running locally
 
 ### Installation
 1. Download this repository
-3. Open a Powershell terminal as admin. The script is not able to run without admin rights.
-4. Navigate to the directory location
-5. Run `.\installer.ps1`
+2. Open a Powershell terminal as admin. The script is not able to run without admin rights.
+3. Navigate to the directory location
+4. Run `.\installer.ps1`
 
 
 
@@ -68,7 +68,7 @@ Contributions are what make the open source community such an amazing place to b
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some amazing feature`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 

@@ -16,8 +16,8 @@ if ($WSL.State -eq "Disabled") {
 # Downloads the ubuntu client
 Write-Host "Downloading and extracting Ubuntu terminal"
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
-Rename-Item ~/Ubuntu.appx ~/Ubuntu.zip
-Expand-Archive ~/Ubuntu.zip ~/Ubuntu
+Rename-Item ~/Ubuntu.appx Ubuntu.zip
+Expand-Archive Ubuntu.zip Ubuntu
 
 # Adds the ubuntu application to your path
 Write-Host "Adding Ubuntu to path"

@@ -49,7 +49,7 @@ The following instructions will let you get Winbuntu up and running locally
 2. Open a Powershell terminal as admin. The script is not able to run without admin rights.
 3. Navigate to the directory location
 4. Run `.\installer.ps1`
-5. During installation, Winbuntu will download and install [Sycnex's Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater). This script will ask you mulitple questions with pop ups.
+5. During installation, Winbuntu will download and install [Sycnex's Windows 10 Debloater](https://github.com/Sycnex/Windows10Debloater). This script will ask you mulitple questions with pop ups, and at the end of the script, if you want to reboot your system. Hit `no`, Winbuntu will reboot your system after installation. 
 
 
 

@@ -23,8 +23,8 @@ if (Test-Path $install_loc) {
 Write-Host "Downloading and extracting Ubuntu terminal"
 $ubuntu = "$install_loc\Ubuntu.appx"
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile $ubuntu -UseBasicParsing
-Rename-Item ~/Ubuntu.appx Ubuntu.zip
-Expand-Archive Ubuntu.zip Ubuntu
+Rename-Item $prog_loc\Ubuntu.appx $prog_loc\Ubuntu.zip
+Expand-Archive $prog_loc\Ubuntu.zip $prog_loc\Ubuntu
 
 # Adds the ubuntu application to your path
 Write-Host "Adding Ubuntu to path"

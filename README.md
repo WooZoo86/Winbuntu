@@ -45,8 +45,7 @@ The following instructions will let you get Winbuntu up and running locally
 2. Windows Subsystem for Linux needs to be enabled. If you would like to do it through powershell you can enter the command `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` and restart your computer when prompted. 
 
 ### Installation
-1. Download this repository 
-2. Copy the folder contents to the location you want Winbuntu to install (e.g `C:\ProgramFiles\Winbuntu`)
+1. Download this repository
 3. Open a Powershell terminal as admin. The script is not able to run without admin rights.
 4. Navigate to the directory location
 5. Run `.\installer.ps1`

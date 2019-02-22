@@ -23,13 +23,13 @@ if (Test-Path $install_loc) {
 Write-Host "Downloading and extracting Ubuntu terminal"
 $ubuntu = "$install_loc\Ubuntu.appx"
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile $ubuntu -UseBasicParsing
-Rename-Item $prog_loc\Ubuntu.appx $prog_loc\Ubuntu.zip
-Expand-Archive $prog_loc\Ubuntu.zip $prog_loc\Ubuntu
+Rename-Item $install_loc\Ubuntu.appx $install_loc\Ubuntu.zip
+Expand-Archive $install_loc\Ubuntu.zip $install_loc\Ubuntu
 
 # Adds the ubuntu application to your path
 Write-Host "Adding Ubuntu to path"
 $addPath = [System.Environment]::SetEnvironmentVariable("PATH", $userenv + $install_loc, "User")
-Invoke-Expression -Command $addPath
+Invoke-Expression $addPath
 
 # Finally, restarts the computer so changes take effect
 Write-Host "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"

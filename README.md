@@ -27,11 +27,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-I completely prefer Linux for my daily driven OS, but that does come with some strings attached. The biggest string (or unbreakable cable for most people) is compatibility, Windows *just works* with everything from gaming to the Microsoft suite of programs (see Microsoft Office and Visual Studio).
+While I prefer Linux for my daily driven OS, it does come with some strings attached. This biggest string is compatibility. In comparison, Windows *just works* with everything from gaming to the Microsoft suite of programs (see Microsoft Office and Visual Studio).
 <br>
 Now, granted, with projects like [Wine](https://www.winehq.org/) or [Proton](https://github.com/ValveSoftware/Proton) that gap is closing every single day, but it's still not closed. 
 
-Winbuntu aims to completely and totally close that gap by, in short, running a Ubuntu on top of a Windows installation. Other people have figured out that you can simply run a desktop environment from a WSL terminal, but Winbuntu makes that Ubuntu DE *feel* like your desktop with program pass-though, you are able to install and run any Windows or Linux program from the same desktop. 
+Winbuntu aims to completely and totally close that gap by, in short, running Ubuntu on top of a Windows installation. Other people have figured out that you can simply run a desktop environment from a WSL terminal, but Winbuntu makes that Ubuntu DE *feel* like your desktop. With program pass-though, you are able to install and run any Windows or Linux program from the same desktop. 
 
 
 

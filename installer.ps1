@@ -32,7 +32,7 @@ if ($WSL.State -eq "Disabled") {
 
 # Creating the home directory for Winbuntu
 if (Test-Path $install_loc) {
-    Write-Host "Installation location already exists, please remove '$install_loc' and restart the installer."
+    Write-Host "Installation location already exists, please remove '$install_loc' or change the installation location and restart the installer."
     exit
 } else { Invoke-Expression "mkdir '$install_loc'" }
 
@@ -69,4 +69,4 @@ Register-ScheduledJob -Trigger $trigger -FilePath "$install_loc\winbuntuWindows.
 Write-Host "Winbuntu has been installed in $((Get-Date).Subtract($start_time).Seconds) second(s)"
 Write-Host -NoNewLine "Press any key to restart your computer...";
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
-#Restart-Computer   
+Restart-Computer   

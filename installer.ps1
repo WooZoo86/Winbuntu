@@ -40,7 +40,7 @@ if (Test-Path $install_loc) {
 $debloat_url = "https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10Debloater.ps1"
 $debloat_file = "$install_loc\debloat.ps1"
 Invoke-WebRequest -Uri $debloat_url -OutFile $debloat_file -UseBasicParsing
-Invoke-Item -Path $debloat_file
+&"$debloat_file"
 
 # Downloads the ubuntu client
 Write-Host "Downloading and extracting Ubuntu terminal"

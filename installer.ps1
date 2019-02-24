@@ -18,9 +18,8 @@ along with Winbuntu.  If not, see <https://www.gnu.org/licenses/>.
 # You must run the script as admin
 #Requires -RunAsAdministrator
 
-# Global Variables              
+# Variables used in the script           
 $start_time = Get-Date            
-$prog_loc = (Resolve-Path .\).Path
 # This variable is where Winbuntu is going to install, change this if you want to change the install location
 $install_loc = "C:\Program Files (x86)\Winbuntu"
 $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
@@ -53,6 +52,18 @@ Expand-Archive $install_loc\Ubuntu.zip $install_loc\Ubuntu
 # Adds the ubuntu application to your path
 Write-Host "Adding Ubuntu to path"
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + $install_loc, "User")
+
+# Copies Winbuntu files to install location, or downloads them from the source if they aren't avalible
+$files = ("winbuntuWindows.ps1",
+          "winbuntuLinux.py")
+foreach ($f in $files) {
+    if ([System.IO.File]::Exists($f)) { Copy-Item $f -Destination "$install_loc\$f" }
+    else { Invoke-WebRequest -Uri "https://raw.githubusercontent.com/LvInSaNevL/Winbuntu/master/$f" -OutFile "$install_loc\$f" }
+}
+
+# Adding Winbuntu as a startup program
+$trigger = New-JobTrigger -AtStartup -RandomDelay 00:00:01
+Register-ScheduledJob -Trigger $trigger -FilePath "$install_loc\winbuntuWindows.ps1" -Name Winbuntu
 
 # Finally, restarts the computer so changes take effect
 Write-Host "Winbuntu has been installed in $((Get-Date).Subtract($start_time).Seconds) second(s)"

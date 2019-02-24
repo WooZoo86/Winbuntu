@@ -30,17 +30,17 @@ if ($WSL.State -eq "Disabled") {
     exit
 }
 
-# Removes bloat, Script created by Sycnex @ https://github.com/Sycnex/Windows10Debloater
-$debloat_url = "https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10Debloater.ps1"
-$debloat_file = "$install_loc\debloat.ps1"
-Invoke-WebRequest -Uri $debloat_url -OutFile $debloat_file -UseBasicParsing
-Invoke-Item -Path $debloat_file
-
 # Creating the home directory for Winbuntu
 if (Test-Path $install_loc) {
     Write-Host "Installation location already exists, please remove '$install_loc' and restart the installer."
     exit
 } else { Invoke-Expression "mkdir '$install_loc'" }
+
+# Removes bloat, Script created by Sycnex @ https://github.com/Sycnex/Windows10Debloater
+$debloat_url = "https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10Debloater.ps1"
+$debloat_file = "$install_loc\debloat.ps1"
+Invoke-WebRequest -Uri $debloat_url -OutFile $debloat_file -UseBasicParsing
+Invoke-Item -Path $debloat_file
 
 # Downloads the ubuntu client
 Write-Host "Downloading and extracting Ubuntu terminal"

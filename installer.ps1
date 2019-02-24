@@ -38,6 +38,7 @@ Write-Host "Adding Ubuntu to path"
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + $install_loc, "User")
 
 # Finally, restarts the computer so changes take effect
-Write-Host "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
-Write-Host "Restarting computer to save changes"
+Write-Host "Winbuntu has been installed in $((Get-Date).Subtract($start_time).Seconds) second(s)"
+Write-Host -NoNewLine "Press any key to restart your computer...";
+$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 #Restart-Computer   

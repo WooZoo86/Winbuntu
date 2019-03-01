@@ -55,6 +55,7 @@ Write-Host "Adding Ubuntu to path"
 
 # Copies Winbuntu files to install location, or downloads them from the source if they aren't avalible
 $files = ("winbuntu.py",
+          "staller.py",
           "src/registry.json")
 foreach ($f in $files) {
     if ([System.IO.File]::Exists($f)) { Copy-Item $f -Destination "$install_loc\$f" }
@@ -67,6 +68,7 @@ Register-ScheduledJob -Trigger $trigger -FilePath "$install_loc\winbuntuWindows.
 
 # Finally, restarts the computer so changes take effect
 Write-Host "Winbuntu has been installed in $((Get-Date).Subtract($start_time).Seconds) second(s)"
+Write-Host "You must restart your computer for the changes to take effect"
 Write-Host -NoNewLine "Press any key to restart your computer...";
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 Restart-Computer   

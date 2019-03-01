@@ -83,7 +83,9 @@ If you have any issues or find any bugs while installing or using Winbuntu, we'd
 
 <!-- CONTRIBUTING -->
 ## Contributing
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+First off, thank you for taking the time to make Winbuntu better!! Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+<br>
+You may also be interested in the [documentation](docs), which goes into great detail on every line of code that makes Winbuntu run!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)

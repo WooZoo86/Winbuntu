@@ -62,7 +62,7 @@ foreach ($f in $files) {
 }
 
 # Adding Winbuntu as a startup program
-$trigger = New-JobTrigger -AtStartup -RandomDelay 00:00:01
+$trigger = New-JobTrigger -AtStartup
 Register-ScheduledJob -Trigger $trigger -FilePath "$install_loc\winbuntuWindows.ps1" -Name Winbuntu
 
 # Finally, restarts the computer so changes take effect

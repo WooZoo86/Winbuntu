@@ -37,10 +37,10 @@ if (Test-Path $install_loc) {
 } else { Invoke-Expression "mkdir '$install_loc'" }
 
 # Removes bloat, Script created by Sycnex @ https://github.com/Sycnex/Windows10Debloater
-$debloat_url = "https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10Debloater.ps1"
+$debloat_url = "https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10SysPrepDebloater.ps1"
 $debloat_file = "$install_loc\debloat.ps1"
 Invoke-WebRequest -Uri $debloat_url -OutFile $debloat_file -UseBasicParsing
-&"$debloat_file"
+&"$debloat_file -Sysprep, -Debloat -Privacy -StopEdgePDF"
 
 # Downloads the ubuntu client
 Write-Host "Downloading and extracting Ubuntu terminal"
@@ -54,8 +54,8 @@ Write-Host "Adding Ubuntu to path"
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + $install_loc, "User")
 
 # Copies Winbuntu files to install location, or downloads them from the source if they aren't avalible
-$files = ("winbuntuWindows.ps1",
-          "winbuntuLinux.py")
+$files = ("winbuntu.py",
+          "/src/registry.json")
 foreach ($f in $files) {
     if ([System.IO.File]::Exists($f)) { Copy-Item $f -Destination "$install_loc\$f" }
     else { Invoke-WebRequest -Uri "https://raw.githubusercontent.com/LvInSaNevL/Winbuntu/master/$f" -OutFile "$install_loc\$f" }

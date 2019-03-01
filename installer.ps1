@@ -55,7 +55,7 @@ Write-Host "Adding Ubuntu to path"
 
 # Copies Winbuntu files to install location, or downloads them from the source if they aren't avalible
 $files = ("winbuntu.py",
-          "/src/registry.json")
+          "src/registry.json")
 foreach ($f in $files) {
     if ([System.IO.File]::Exists($f)) { Copy-Item $f -Destination "$install_loc\$f" }
     else { Invoke-WebRequest -Uri "https://raw.githubusercontent.com/LvInSaNevL/Winbuntu/master/$f" -OutFile "$install_loc\$f" }

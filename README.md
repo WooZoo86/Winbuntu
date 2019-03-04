@@ -1,3 +1,5 @@
+# THIS IS AN OLD VERSION OF WINBUNTU AND IS NO LONGER SUPPORTED, IT IS ONLY HERE FOR LEGACY REASONS
+
 <!-- PROJECT HEADER -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/LvInSaNevL/Winbuntu/master/Logos/Winbuntu.png" alt="Logo" width="100" height="100">

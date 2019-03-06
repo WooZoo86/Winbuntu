@@ -16,14 +16,45 @@ along with Winbuntu.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 using System;
+using System.Collections.Generic;
 
 namespace Winbuntu
 {
     class Program
     {
+        /// <summary>
+        /// Main entry point for command line Winbuntu
+        /// </summary>
+        /// <param name="args"> The set of arguments that tell winbuntu what to do </param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Double checks that arguments were actually passed
+            if(args.Length != 0) 
+            { 
+                    // Check if command exists
+                    string primaryCommand = args[0].ToLower().Trim();
+                    bool commandExists = false;
+                    int commandIndex = -1;
+                    for (int i = 0; i < Util.Commands.Count; i++)
+                    {
+                        commandExists = primaryCommand == Util.Commands[i].Name      || 
+                                        primaryCommand == Util.Commands[i].ShortName || 
+                                        commandExists;
+                        commandIndex = i;
+                        if (commandExists) break;
+                    }
+
+                    // Execute the command
+                    if (commandExists) Util.Commands[commandIndex].Execute();
+                    else Console.WriteLine("\"" + primaryCommand + "\" is not a valid command.");
+            }   
+
+            // If no args were passed, exit  
+            else 
+            {
+                Console.WriteLine("No command line arguments found.");
+                Environment.Exit(0);
+            } 
         }
     }
 }

@@ -5,4 +5,12 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Commands">
+      <HintPath>src/Commands.cs</HintPath>
+    </Reference>
+    <Reference Include="Utils">
+      <HintPath>src/Utils.cs</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

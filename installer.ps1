@@ -57,10 +57,11 @@ Write-Host "Adding Ubuntu to path"
 $files = (# Winbuntu program files
           "./winbuntu.csproj",
           "./winbuntu.cs",
-          "./winbuntuRuntime.cs",
+          "./src/Commands.cs",
+          "./src/Utils.cd"
           # User specific data files
-          "./src/registry.json",
-          "./src/userPrefs.json",
+          "./src/data/registry.json",
+          "./src/data/userPrefs.json",
           # Misc. Winbuntu files
           "./LICENSE",
           "./README.md")

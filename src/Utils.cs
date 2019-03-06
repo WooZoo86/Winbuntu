@@ -30,12 +30,12 @@ namespace Winbuntu
         /// </summary>
         public static readonly List<Command> Commands = new List<Command>()
         {
-            new Install(),
-            new Uninstall(),
             new Add(),
-            new Version(),
+            new Help(),
+            new Install(),
             new Registry(),
-            new Help()
+            new Uninstall(),
+            new Version()
         };
     }
 }

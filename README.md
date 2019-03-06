@@ -115,8 +115,7 @@ You may also be interested in the [documentation](docs), which goes into great d
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some amazing feature`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Verify that your changes comply with our [change policy](docs/change.md)
-6. Open a Pull Request
+5. Open a Pull Request
 
 
 

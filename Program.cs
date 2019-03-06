@@ -37,6 +37,7 @@ namespace Winbuntu
                     int commandIndex = -1;
                     for (int i = 0; i < Util.Commands.Count; i++)
                     {
+                        // Checks if the flag is a valid argument
                         commandExists = primaryCommand == Util.Commands[i].Name      || 
                                         primaryCommand == Util.Commands[i].ShortName || 
                                         commandExists;
@@ -44,9 +45,14 @@ namespace Winbuntu
                         if (commandExists) break;
                     }
 
-                    // Execute the command
+                    // If the flag is valid, execute the command
                     if (commandExists) Util.Commands[commandIndex].Execute();
-                    else Console.WriteLine("\"" + primaryCommand + "\" is not a valid command.");
+                    // Else exit the program
+                    else 
+                    {
+                        Console.WriteLine("\"" + primaryCommand + "\" is not a valid command, try winbuntu help for more options.");
+                        Environment.Exit(0);
+                    }
             }   
 
             // If no args were passed, exit  

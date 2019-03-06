@@ -52,7 +52,8 @@ namespace Winbuntu
             // If no args were passed, exit  
             else 
             {
-                Console.WriteLine("No command line arguments found.");
+                Console.Write("No command line arguments found, ");
+                Util.Commands[1].Execute();
                 Environment.Exit(0);
             } 
         }

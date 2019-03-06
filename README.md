@@ -22,6 +22,9 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Using Winbuntu](#using-winbuntu)
+  - [Flags](#flags)
+  - [Command Line Examples](#command-line-examples)
 - [Help and Issues](#help-and-issues)
 - [Contributing](#contributing)
 - [License](#license)
@@ -72,6 +75,27 @@ The following instructions will let you get Winbuntu up and running locally
 
 
 
+<!-- USING WINBUNTU -->
+## Using Winbuntu
+Once Winbuntu is installed it's pretty easy to use. Winbuntu should automatically run once you boot up you computer and while you're in the Ubuntu terminal you can simply use the `winbuntu` command with a flag!
+
+### Flags
+| Flag      | Short name  | Description  |
+| ----      | ----        | ----         |
+| Add       | A           | Adds a piece of software already installed on the system to Winbuntu's registry |
+| Help      | H           | Displays this chart in the terminal |
+| Install   | I           | Installs a piece of software from an installer on the system and adds is to the Winbuntu registry |
+| Run       | R           | Runs a piece of software through Winbuntu |
+| Registry  | S           | Prints the entire Winbuntu registry to the console |
+| Uninstall | U           | Removes a piece of software from the system and removes it from the Winbuntu registry |
+| Version   | V           | Prints the current Winbuntu version to the console |
+
+### Command Line Examples
+1. If you had the vscode installer you could run `winbuntu install "VSCodeUserSetup-x64-1.31.1.exe"` to run the installer and add the program to Winbuntu's registry 
+2. Although, if you had already installed VS Code, `winbuntu add "\Program Files\code\code.exe"` would add VS Code to Winbuntu's working registry
+3. Once you have it installed you can use the command `winbuntu run "vscode"` to launch the windows version of VS Code.
+
+
 <!-- HELP AND ISSUES -->
 ## Help and Issues
 If you have any issues or find any bugs while installing or using Winbuntu, we'd love to help you just make sure you ask it in the right place!
@@ -91,7 +115,8 @@ You may also be interested in the [documentation](docs), which goes into great d
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some amazing feature`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Verify that your changes comply with our [change policy](docs/change.md)
+6. Open a Pull Request
 
 
 

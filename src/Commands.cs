@@ -54,8 +54,16 @@ namespace Winbuntu
     {
         public override void Execute() { Console.WriteLine("Printing Registry"); }
         public override string Name => "registry";
-        public override string ShortName => "r";
+        public override string ShortName => "s";
         public override string Description => "Prints the entire Winbuntu registry to the console";
+    }
+
+    public class Run : Command
+    {
+        public override void Execute() { Console.WriteLine("Running software"); }
+        public override string Name => "run";
+        public override string ShortName => "r";
+        public override string Description => "Runs a piece of software through Winbuntu";
     }
 
     /// <summary>

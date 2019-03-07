@@ -12,4 +12,8 @@
     <Reference Include="src/DataReader.cs"></Reference>
     <Reference Include="src/RegEdit.cs"></Reference>
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
 </Project>

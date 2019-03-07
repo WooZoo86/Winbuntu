@@ -50,7 +50,7 @@ namespace Winbuntu
     /// </summary>
     public class Add : Command
     {
-        public override void Execute() { Console.WriteLine("Adding software"); }
+        public override void Execute() { RegEdit.Add(); }
         public override string Name => "add";
         public override string ShortName => "a";
         public override string Description => "Adds a piece of software already installed on the system to Winbuntu's registry";
@@ -61,7 +61,7 @@ namespace Winbuntu
     /// </summary>
     public class Remove : Command
     {
-        public override void Execute() { Console.WriteLine("Removing software"); }
+        public override void Execute() { RegEdit.Remove(); }
         public override string Name => "remove";
         public override string ShortName => "r";
         public override string Description => "Removes a piece of software from the Winbuntu registry without removing it from the system";
@@ -80,7 +80,7 @@ namespace Winbuntu
     /// </summary>
     public class Registry : Command
     {
-        public override void Execute() { Console.WriteLine("Printing Registry"); }
+        public override void Execute() { UseData.RegPrint(); }
         public override string Name => "registry";
         public override string ShortName => "s";
         public override string Description => "Prints the entire Winbuntu registry to the console";

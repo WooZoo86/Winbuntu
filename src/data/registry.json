@@ -1,0 +1,8 @@
+{
+    "Example":{
+        "title": "Example Program",
+        "execute": "example.exe",
+        "target": "windows",
+        "path": "C:\\Program Files\\Example"
+    }
+}

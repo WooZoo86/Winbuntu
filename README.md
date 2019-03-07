@@ -41,17 +41,17 @@ Now, granted, with projects like [Wine](https://www.winehq.org/) or [Proton](htt
 Winbuntu aims to completely and totally close that gap by, in short, running Ubuntu on top of a Windows installation. Other people have figured out that you can simply run a desktop environment from a WSL terminal, but Winbuntu makes that Ubuntu DE *feel* like your desktop. With program pass-though, you are able to install and run any Windows or Linux program from the same desktop. 
 
 ### Legal Jargon
-Foobar is free software: you can redistribute it and/or modify
+Winbuntu is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Foobar is distributed in the hope that it will be useful,
+Winbuntu is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
-For more information about Winbuntu's license, please see the [license packaged with the program](https://github.com/LvInSaNevL/Winbuntu/blob/master/LICENSE)
+For more information about Winbuntu's license, please see the [license packaged with the program](LICENSE)
 
 
 

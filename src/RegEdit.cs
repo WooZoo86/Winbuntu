@@ -1,0 +1,7 @@
+namespace Winbuntu
+{
+    class RegEdit
+    {
+        
+    }
+}

@@ -6,11 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Commands">
-      <HintPath>src/Commands.cs</HintPath>
-    </Reference>
-    <Reference Include="Utils">
-      <HintPath>src/Utils.cs</HintPath>
-    </Reference>
+    <Reference Include="src/Commands.cs"></Reference>
+    <Reference Include="src/Utils.cs"></Reference>
+    <Reference Include="src/Staller.cs"></Reference>
+    <Reference Include="src/DataReader.cs"></Reference>
+    <Reference Include="src/RegEdit.cs"></Reference>
   </ItemGroup>
 </Project>

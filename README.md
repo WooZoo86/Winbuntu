@@ -83,9 +83,10 @@ Once Winbuntu is installed it's pretty easy to use. Winbuntu should automaticall
 | Flag      | Short name  | Description  |
 | ----      | ----        | ----         |
 | Add       | A           | Adds a piece of software already installed on the system to Winbuntu's registry |
+| Run       | E           | Runs a piece of software through Winbuntu |
 | Help      | H           | Displays this chart in the terminal |
 | Install   | I           | Installs a piece of software from an installer on the system and adds is to the Winbuntu registry |
-| Run       | R           | Runs a piece of software through Winbuntu |
+| Remove    | R           | Removes a piece of software from the Winbuntu registry without removing it from the system |
 | Registry  | S           | Prints the entire Winbuntu registry to the console |
 | Uninstall | U           | Removes a piece of software from the system and removes it from the Winbuntu registry |
 | Version   | V           | Prints the current Winbuntu version to the console |

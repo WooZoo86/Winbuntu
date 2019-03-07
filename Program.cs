@@ -26,6 +26,7 @@ namespace Winbuntu
         /// Main entry point for command line Winbuntu
         /// </summary>
         /// <param name="args"> The set of arguments that tell winbuntu what to do </param>
+        public static List<string> _args = new List<string>();
         static void Main(string[] args)
         {
             // Double checks that arguments were actually passed
@@ -34,6 +35,7 @@ namespace Winbuntu
                     // Check if command exists
                     string primaryCommand = args[0].ToLower().Trim();
                     bool commandExists = false;
+                    _args.AddRange(args);
                     int commandIndex = -1;
                     for (int i = 0; i < Util.Commands.Count; i++)
                     {
@@ -59,7 +61,7 @@ namespace Winbuntu
             else 
             {
                 Console.Write("No command line arguments found, ");
-                Util.Commands[1].Execute();
+                Util.Commands[2].Execute();
                 Environment.Exit(0);
             } 
         }

@@ -48,8 +48,10 @@ namespace Winbuntu
         public static readonly List<Command> Commands = new List<Command>()
         {
             new Add(),
+            new Run(),
             new Help(),
             new Install(),
+            new Remove(),
             new Registry(),
             new Uninstall(),
             new Version()

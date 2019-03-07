@@ -28,7 +28,7 @@ namespace Winbuntu
     /// </summary>
     public class Install : Command
     {
-        public override void Execute() { Console.WriteLine("Installing software"); }
+        public override void Execute() { Staller.Install(); }
         public override string Name => "install";
         public override string ShortName => "i";
         public override string Description => "Installs a piece of software from an installer on the system and adds is to the Winbuntu registry";
@@ -39,14 +39,14 @@ namespace Winbuntu
     /// </summary>
     public class Uninstall : Command
     {
-        public override void Execute() { Console.WriteLine("Uninstalling software"); }
+        public override void Execute() { Staller.Uninstall(); }
         public override string Name => "uninstall";
         public override string ShortName => "u";
         public override string Description => "Removes a piece of software from the system and removes it from the Winbuntu registry";
     }
 
     /// <summary>
-    /// Adds an program file to Winbuntu's registry
+    /// Adds a program file to Winbuntu's registry
     /// </summary>
     public class Add : Command
     {
@@ -54,6 +54,17 @@ namespace Winbuntu
         public override string Name => "add";
         public override string ShortName => "a";
         public override string Description => "Adds a piece of software already installed on the system to Winbuntu's registry";
+    }
+
+    /// <summary>
+    /// Removes a program file to Winbuntu's registry
+    /// </summary>
+    public class Remove : Command
+    {
+        public override void Execute() { Console.WriteLine("Removing software"); }
+        public override string Name => "remove";
+        public override string ShortName => "r";
+        public override string Description => "Removes a piece of software from the Winbuntu registry without removing it from the system";
     }
 
     public class Version : Command
@@ -79,7 +90,7 @@ namespace Winbuntu
     {
         public override void Execute() { Console.WriteLine("Running software"); }
         public override string Name => "run";
-        public override string ShortName => "r";
+        public override string ShortName => "e";
         public override string Description => "Runs a piece of software through Winbuntu";
     }
 

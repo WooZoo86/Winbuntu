@@ -58,7 +58,10 @@ $files = (# Winbuntu program files
           "./winbuntu.csproj",
           "./winbuntu.cs",
           "./src/Commands.cs",
-          "./src/Utils.cd"
+          "./src/Utils.cs",
+          "./src/Staller.cs",
+          "./src/DataReader.cs",
+          "./src/RegEdit.cs",
           # User specific data files
           "./src/data/registry.json",
           "./src/data/userPrefs.json",

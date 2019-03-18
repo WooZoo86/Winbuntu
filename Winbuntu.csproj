@@ -1,6 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Authors>Matt Wollam</Authors>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <AssemblyTitle>Winbuntu</AssemblyTitle>
+    <Description>A tool for everyone who wants a Linux-like experience on a Windows 10 kernel</Description>
+    <Copyright>GNU GPLv3</Copyright>
+    <Version>0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
@@ -9,7 +18,7 @@
     <Reference Include="src/Commands.cs"></Reference>
     <Reference Include="src/Utils.cs"></Reference>
     <Reference Include="src/Staller.cs"></Reference>
-    <Reference Include="src/DataReader.cs"></Reference>
+    <Reference Include="src/DataHandle.cs"></Reference>
     <Reference Include="src/RegEdit.cs"></Reference>
   </ItemGroup>
 

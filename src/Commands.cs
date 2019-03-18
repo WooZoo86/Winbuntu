@@ -16,6 +16,7 @@ along with Winbuntu.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 using System;
+using Newtonsoft.Json;
 
 namespace Winbuntu
 {
@@ -80,7 +81,7 @@ namespace Winbuntu
     /// </summary>
     public class Registry : Command
     {
-        public override void Execute() { UseData.RegPrint(); }
+        public override void Execute() { Console.WriteLine(UseData.DataReader().ToString()); }
         public override string Name => "registry";
         public override string ShortName => "s";
         public override string Description => "Prints the entire Winbuntu registry to the console";

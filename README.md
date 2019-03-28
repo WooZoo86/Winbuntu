@@ -7,8 +7,8 @@
     A tool for everyone who wants a Linux-like experience on a Windows 10 kernel!
     <br />
     <a href="https://github.com/LvInSaNevL/Winbuntu/issues/new">Report Bug</a>
-    ·
     <a href="https://github.com/LvInSaNevL/Winbuntu/issues/new">Request Feature</a>
+    <a href="https://trello.com/invite/b/uSrAPzG7/96ffbf87ea45fa3580707a0dc034a7a5/winbuntu">Look at the todo list</a>
   </p>
 </p>
 
@@ -87,7 +87,7 @@ Once Winbuntu is installed it's pretty easy to use. Winbuntu should automaticall
 If you have any issues or find any bugs while installing or using Winbuntu, we'd love to help you just make sure you ask it in the right place!
 1. If you think the issue is operator related, the recommened place to ask is in the [Discord server](https://discord.gg/7uzCM92).
 2. If you think the issue is programming related, or you just have a really strange issue you can join the [Discord server](https://discord.gg/7uzCM92) and talk about it there, or if you are someone who likes to tinker, follow the contributing guidelines below!
-3. You can [also check out the Trello board](https://trello.com/b/uSrAPzG7/winbuntu) if you would like to see the future of Winbuntu.
+3. You can [also check out the Trello board](https://trello.com/invite/b/uSrAPzG7/96ffbf87ea45fa3580707a0dc034a7a5/winbuntu) if you would like to see the future of Winbuntu.
 
 
 
@@ -96,7 +96,7 @@ If you have any issues or find any bugs while installing or using Winbuntu, we'd
 ## Contributing
 First off, thank you for taking the time to make Winbuntu better!! Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 <br>
-You may also be interested in the [documentation](docs), which goes into great detail on every line of code that makes Winbuntu run!
+You may also be interested in the [documentation](docs), which goes into great detail on every line of code that makes Winbuntu run, or the [Trello board](https://trello.com/invite/b/uSrAPzG7/96ffbf87ea45fa3580707a0dc034a7a5/winbuntu) to look at the future of Winbuntu!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)

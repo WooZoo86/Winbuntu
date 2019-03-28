@@ -18,7 +18,6 @@
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
-  - [Legal Jargon](#legal-jargon)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -27,7 +26,7 @@
   - [Command Line Examples](#command-line-examples)
 - [Help and Issues](#help-and-issues)
 - [Contributing](#contributing)
-- [License](#license)
+- [Legal Jargon](#legal-jargon)
 - [Contact](#contact)
 
 
@@ -39,20 +38,6 @@ While I prefer Linux for my daily driven OS, it does come with some strings atta
 Now, granted, with projects like [Wine](https://www.winehq.org/) or [Proton](https://github.com/ValveSoftware/Proton) that gap is closing every single day, but it's still not closed. 
 
 Winbuntu aims to completely and totally close that gap by, in short, running Ubuntu on top of a Windows installation. Other people have figured out that you can simply run a desktop environment from a WSL terminal, but Winbuntu makes that Ubuntu DE *feel* like your desktop. With program pass-though, you are able to install and run any Windows or Linux program from the same desktop. 
-
-### Legal Jargon
-Winbuntu is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Winbuntu is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-For more information about Winbuntu's license, please see the [license packaged with the program](LICENSE)
-
 
 
 
@@ -80,16 +65,16 @@ The following instructions will let you get Winbuntu up and running locally
 Once Winbuntu is installed it's pretty easy to use. Winbuntu should automatically run once you boot up you computer and while you're in the Ubuntu terminal you can simply use the `winbuntu` command with a flag!
 
 ### Flags
-| Flag      | Short name  | Description  |
-| ----      | ----        | ----         |
-| Add       | A           | Adds a piece of software already installed on the system to Winbuntu's registry |
-| Run       | E           | Runs a piece of software through Winbuntu |
-| Help      | H           | Displays this chart in the terminal |
-| Install   | I           | Installs a piece of software from an installer on the system and adds is to the Winbuntu registry |
-| Remove    | R           | Removes a piece of software from the Winbuntu registry without removing it from the system |
-| Registry  | S           | Prints the entire Winbuntu registry to the console |
-| Uninstall | U           | Removes a piece of software from the system and removes it from the Winbuntu registry |
-| Version   | V           | Prints the current Winbuntu version to the console |
+| Flag      | Short name | Description                                                                                       |
+| --------- | ---------- | ------------------------------------------------------------------------------------------------- |
+| Add       | A          | Adds a piece of software already installed on the system to Winbuntu's registry                   |
+| Run       | E          | Runs a piece of software through Winbuntu                                                         |
+| Help      | H          | Displays this chart in the terminal                                                               |
+| Install   | I          | Installs a piece of software from an installer on the system and adds is to the Winbuntu registry |
+| Remove    | R          | Removes a piece of software from the Winbuntu registry without removing it from the system        |
+| Registry  | S          | Prints the entire Winbuntu registry to the console                                                |
+| Uninstall | U          | Removes a piece of software from the system and removes it from the Winbuntu registry             |
+| Version   | V          | Prints the current Winbuntu version to the console                                                |
 
 ### Command Line Examples
 1. If you had the vscode installer you could run `winbuntu install "VSCodeUserSetup-x64-1.31.1.exe"` to run the installer and add the program to Winbuntu's registry 
@@ -102,6 +87,7 @@ Once Winbuntu is installed it's pretty easy to use. Winbuntu should automaticall
 If you have any issues or find any bugs while installing or using Winbuntu, we'd love to help you just make sure you ask it in the right place!
 1. If you think the issue is operator related, the recommened place to ask is in the [Discord server](https://discord.gg/7uzCM92).
 2. If you think the issue is programming related, or you just have a really strange issue you can join the [Discord server](https://discord.gg/7uzCM92) and talk about it there, or if you are someone who likes to tinker, follow the contributing guidelines below!
+3. You can [also check out the Trello board](https://trello.com/b/uSrAPzG7/winbuntu) if you would like to see the future of Winbuntu.
 
 
 
@@ -121,8 +107,19 @@ You may also be interested in the [documentation](docs), which goes into great d
 
 
 <!-- LICENSE -->
-## License
-Distributed under the GNU General Public License V3 License. See `LICENSE` for more information.
+### Legal Jargon
+Winbuntu is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Winbuntu is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+For more information about Winbuntu's license, please see the [license packaged with the program](LICENSE)
+
 
 
 

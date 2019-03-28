@@ -1,16 +1,16 @@
-{
-    "example": {
+[
+    {
         "title": "Example Program",
         "shortName": "example",
         "execute": "example.exe",
         "target": "windows",
         "path": "C:\\Program Files\\Example"
     },
-    "test": {
+    {
         "title": "Test Program",
         "shortName": "test",
         "execute": "test.exe",
         "target": "linux",
         "path": "C:\\Program Files\\test"
     }
-}
+]

@@ -81,7 +81,13 @@ namespace Winbuntu
     /// </summary>
     public class Registry : Command
     {
-        public override void Execute() { Console.WriteLine(UseData.DataReader().ToString()); }
+        public override void Execute()
+        {
+            foreach(var entry in UseData.DataReader())
+            {
+                Console.WriteLine($"{entry.Title}\n\t{entry.ShortName}\n\t{entry.Execute}\n\t{entry.Target}\n\t{entry.Path}");
+            }
+        }
         public override string Name => "registry";
         public override string ShortName => "s";
         public override string Description => "Prints the entire Winbuntu registry to the console";

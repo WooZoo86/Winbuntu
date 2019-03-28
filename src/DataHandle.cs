@@ -22,19 +22,38 @@ using Newtonsoft.Json;
 
 namespace Winbuntu
 {
+    public struct RegistryEntry
+    {
+        [JsonProperty("title")]
+        public string Title { get; set; }
+
+        [JsonProperty("shortName")]
+        public string ShortName { get; set; }
+
+        [JsonProperty("execute")]
+        public string Execute { get; set; }
+
+        [JsonProperty("target")]
+        public string Target { get; set; }
+
+        [JsonProperty("path")]
+        public string Path { get; set; }
+    }
+
     public class UseData 
     {
         /// <summary>
         /// A method to generate useable data from the registry file
         /// </summary>
         /// <returns> A dynmaic  </returns>
-        public static dynamic DataReader()
+        public static List<RegistryEntry> DataReader()
         {
             StreamReader reader = new StreamReader(@"src/data/registry.json");
             string file = reader.ReadToEnd();
-            dynamic data = JsonConvert.DeserializeObject(file);
+            //dynamic data = JsonConvert.DeserializeObject(file);
+            List<RegistryEntry> entries = JsonConvert.DeserializeObject<List<RegistryEntry>>(file);
 
-            return data;
+            return entries;
         }
     }
 }

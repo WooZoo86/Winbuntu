@@ -1,25 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+<!-- General pieces of information about Winbuntu -->
   <PropertyGroup>
     <Authors>Matt Wollam</Authors>
     <NeutralLanguage>en-US</NeutralLanguage>
     <AssemblyTitle>Winbuntu</AssemblyTitle>
     <Description>A tool for everyone who wants a Linux-like experience on a Windows 10 kernel</Description>
     <Copyright>GNU GPLv3</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/LvInSaNevL/Winbuntu</RepositoryUrl>
     <Version>0.1</Version>
   </PropertyGroup>
 
+<!-- .NET framework build target(s) -->
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+<!-- Included files and packages -->
   <ItemGroup>
-    <Reference Include="src/Commands.cs"></Reference>
-    <Reference Include="src/Utils.cs"></Reference>
-    <Reference Include="src/Staller.cs"></Reference>
-    <Reference Include="src/DataHandle.cs"></Reference>
-    <Reference Include="src/RegEdit.cs"></Reference>
+    <Content Include = "\src"></Content>
   </ItemGroup>
 
   <ItemGroup>

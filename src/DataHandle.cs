@@ -22,20 +22,28 @@ using Newtonsoft.Json;
 
 namespace Winbuntu
 {
+    /// <summary>
+    /// The generic structure that Winbuntu registries take
+    /// </summary>
     public struct RegistryEntry
     {
+        // Full name of the program
         [JsonProperty("title")]
         public string Title { get; set; }
 
+        // Single word name of the program, used for command line
         [JsonProperty("shortName")]
         public string ShortName { get; set; }
 
+        // Location of the actual program executable 
         [JsonProperty("execute")]
         public string Execute { get; set; }
 
+        // Platform of choice, either "windows" or "linux"
         [JsonProperty("target")]
         public string Target { get; set; }
 
+        // Path to the parent directory of the program
         [JsonProperty("path")]
         public string Path { get; set; }
     }
@@ -45,12 +53,11 @@ namespace Winbuntu
         /// <summary>
         /// A method to generate useable data from the registry file
         /// </summary>
-        /// <returns> A dynmaic  </returns>
+        /// <returns> A formatted list of registry entries for the rest of the program to use </returns>
         public static List<RegistryEntry> DataReader()
         {
             StreamReader reader = new StreamReader(@"src/data/registry.json");
             string file = reader.ReadToEnd();
-            //dynamic data = JsonConvert.DeserializeObject(file);
             List<RegistryEntry> entries = JsonConvert.DeserializeObject<List<RegistryEntry>>(file);
 
             return entries;

@@ -1,14 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 <!-- General pieces of information about Winbuntu -->
   <PropertyGroup>
-    <Authors>Matt Wollam</Authors>
-    <NeutralLanguage>en-US</NeutralLanguage>
+    <!-- General information about Winbuntu -->
     <AssemblyTitle>Winbuntu</AssemblyTitle>
     <Description>A tool for everyone who wants a Linux-like experience on a Windows 10 kernel</Description>
+    <RepositoryUrl>https://github.com/LvInSaNevL/Winbuntu</RepositoryUrl>
+    <!-- Legal stuff -->
     <Copyright>GNU GPLv3</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/LvInSaNevL/Winbuntu</RepositoryUrl>
+    <!-- Other information some people might be interested in -->
+    <Authors>Matt Wollam</Authors>
     <Version>0.1</Version>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
 <!-- .NET framework build target(s) -->
@@ -20,10 +23,9 @@
 
 <!-- Included files and packages -->
   <ItemGroup>
+    <!-- Entire source code (minus Program.cs) of Winbuntu -->
     <Content Include = "\src"></Content>
-  </ItemGroup>
-
-  <ItemGroup>
+    <!-- Packages that Winbuntu needs to work -->
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 </Project>

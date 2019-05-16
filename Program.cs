@@ -25,7 +25,7 @@ namespace Winbuntu
         /// <summary>
         /// Main entry point for command line Winbuntu
         /// </summary>
-        /// <param name="args"> The set of arguments that tell winbuntu what to do </param>
+        /// <param name="args"> The set of command line arguments that tell winbuntu what to do </param>
         public static List<string> _args = new List<string>();
         static void Main(string[] args)
         {
